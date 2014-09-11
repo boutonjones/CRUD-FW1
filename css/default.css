@@ -1,0 +1,1370 @@
+
+/* font-family: "Times New Roman", Ariel, Helvetica, Serif; */
+
+BODY, TR        {
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    line-height: 1.125em; /* 16?1.125=18 */
+    margin-top: .34em /* approx. 5 px */
+}
+
+p               {
+    display: block;
+    white-space: normal;
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em /* 16?1.125=18 */
+}
+
+Table           {
+    border: 3px groove blue;
+    border-collapse: collapse; /* Borders are collapsed into a single border when possible */
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+}
+
+TH              {
+    text-align: center;
+    font-weight: bold;
+    background-color: #CFF0FC;  
+    color: #0000CC; 
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    line-height: 1.125em; /* 16?1.125=18 */
+    padding: .372 /* 6px ? */
+}
+
+TD              {
+    text-align: left;
+    vertical-align: top;
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    line-height: 1.125em; /* 16?1.125=18 */
+    padding: .372 /* 6px ? */
+}
+                 
+caption         {
+    background-color: #CFF0FC;
+    color: #0000CC; 
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    /* font-size : 11px; */
+    font-weight: bold;
+    text-align: center;
+    /*text-transform: capitalize;*/
+    border-style: inherit;
+    border-color: inherit;
+    border-width: .1875em; /* 3px */
+    border-bottom-style: none; 
+    padding: .372 /* 6px ? */;
+    margin-left: auto; 
+    margin-right: auto
+}
+
+HR              {
+    border: 0;
+    width: 90%;
+    color: #0000FF;
+    background-color: #0000FF;
+    height: 3px;
+}
+
+H1              {
+    font-style: bold;
+    color: #000000;
+    /* font-size: 225%; */
+    font-size: xx-large;
+    text-align: center
+}
+
+H2              {
+    font-style: bold;
+    color: #000000;
+    /*font-size: 200%;*/
+    font-size: x-large
+}
+
+H3              {
+    font-size: large;
+    color: #000000
+}
+
+H4              {
+    font-size: medium;
+    color: #000000
+}
+
+big             {
+    font-size: larger
+}
+
+small           {
+    font-size: smaller
+}
+
+/* Implementing the current proposal should make it possible to add the following to the browser default stylesheet, and then forget about HTML font size issues everywhere else: */
+
+font[size=1]    {
+    font-size: xx-small
+}
+/* X-small is exactly the same as size=1. */
+font[size=2]    {
+    font-size: small
+}
+font[size=3]    {
+    font-size: medium
+}
+font[size=4]    {
+    font-size: large
+}
+font[size=5]    {
+    font-size: x-large
+}
+font[size=6]    {
+    font-size: xx-large
+}
+font[size=7]    {
+    font-size: 300%
+}
+font[size=-1]   {
+    font-size: smaller
+}
+font[size=+1]   {
+    font-size: larger
+}
+font[size=-2]   {
+    font-size: 60%
+}
+font[size=+2]   {
+    font-size: 150%
+}
+font[size=+4]   {
+    font-size: 300%
+}
+
+/* SOURCE: http://style.cleverchimp.com/font_size_intervals/altintervals.html */
+
+/* @@@ Lists @@@ */
+
+UL              {
+    list-style-image: url('images/blueball.gif');
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+}
+                 
+UL UL           {
+    margin-top:  0px;
+    margin-bottom: 0px;
+}
+                 
+OL              {
+    padding-top: 1.125em; /* 16?1.125=18 */
+    padding-bottom: 1.125em /* 16?1.125=18 */
+}
+                 
+OL OL           {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+
+.doublespace ul li,
+.doublespace ol li {
+    margin-bottom: 1.125em;
+} 
+
+UL.xtralinebr LI,
+OL.xtralinebr LI         {
+    margin-top: 1.5em;
+    margin-bottom:  1.5em;
+}
+
+UL.xtralinebr UL LI,
+OL.xtralinebr OL LI,
+UL.xtralinebr OL LI,
+OL.xtralinebr UL LI          {
+    margin-top: 0em;
+    margin-bottom:  0em;
+}
+
+UL.checklist {
+    list-style-image: url('images/empty_checkbox.png');
+}
+
+.checked_box {
+    list-style-image: url('images/checked_box.png');
+}
+
+.compact {
+    line-height: 100%
+}
+
+.doublespace li {
+    margin-bottom: 1.125em;
+} 
+/* margin-bottom = line-height */
+
+dl              {
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+}
+
+dl dt           {
+    color: blue; font-weight: bold;
+    margin-top: 1.125em; /* 16?1.125=18 */
+}
+
+dl dd           {
+    margin-left: 2em;
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+}    
+
+
+/* @@@ Regular Anchor Links @@@ */
+ 
+A:link          {
+    color: #0000CC;
+    text-decoration: none
+}
+
+A:visited       {
+    text-decoration: none
+}
+
+A:hover         {
+    color: #FF0000;
+    text-decoration: underline
+}
+
+A:active        {
+    color: #009900;
+    text-decoration: none
+}
+
+A img           {
+    border: none
+}
+
+fieldset        {
+    border-style: groove; 
+    border-width: 3px; 
+    padding: 1.25em; /* 20px; */ 
+    margin: 1.25em; /* 20px; */ 
+    text-align: left;
+    font-family: "Times New Roman", Ariel, Helvetica, Serif
+    /*'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, 
+    sans-serif*/
+}
+                 
+
+div             {
+    word-wrap: break-word;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+}
+
+/* This property specifies whether the current rendered line should break if the content exceeds the boundary of the specified rendering box for an element (this is similar in some ways to the ?clip? and ?overflow? properties in intent.) This property should only apply if the element has a visual rendering, is an inline element with explicit height/width, is absolutely positioned and/or is a block element. 
+
+-webkit-user-select determines whether a user can select the content of an element.  
+Syntax: -webkit-user-select: policy;
+auto (by default) The user can select content in the element. 
+none The user cannot select any content. 
+text The user can select text in the element. */
+
+pre             {
+    font-family: 'courier new';
+    white-space: pre
+    /* Whitespace is preserved by the browser. 
+    Text will only wrap on line breaks */
+}
+
+.pre            {
+    font-size: .875em; /* 14px */ 
+    font-family: 'courier new';
+    white-space: pre; 
+    /* Whitespace is preserved by the browser. 
+    Text will only wrap on line breaks */
+    margin-top: 1.125em; /* 16?1.125=18 */;
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+    margin-left: 1.125em; /* 16?1.125=18 */
+    margin-right: 0px
+}
+
+code, .code     {
+    /* Whitespace is preserved by the browser. 
+    Text will wrap when necessary, and on line breaks */
+    word-wrap: break-word;
+    font-size: .875em; /* 14px */
+    font-family: 'courier new', courier, monospace;
+    color: #000000;
+    background-color: #CFF0FC;  /*#e5eecc #EEFFFF #ffffcc*/
+    background-image: url('images/bluegrid.gif'); 
+    padding: .25em .714em .25em 1.428em;
+    /* margin: 0px 0px 0px 20px; */ 
+    margin: 1.285em /*18px*/ 0px 1.285em /*18px*/ 1.428em; /*20px*//*--Left Margin--*/
+    border: 3px inset #0000dd; 
+    /* border: thin solid Black */
+    line-height: 1.428em; /*20px*/
+    display: block;
+    text-align: left;
+    overflow: auto;
+    overflow-Y: hidden  /*--Hides vertical scroll created by IE--*/
+    /* font-style: italic */
+    /* white-space: pre */
+    /* padding: 18px 0; */            
+}
+
+blockquote, .blockquote {
+    /* Whitespace is preserved by the browser. 
+    Text will wrap when necessary, and on line breaks */
+    word-wrap: break-word; 
+    /* Whitespace is preserved by the browser. */
+    /* Text will only wrap on line breaks. */
+    /* Acts like the <pre> tag in HTML */
+    /* white-space: pre; */
+    font-size: .875em; /* 14px */
+    font-family: arial, sans-serif;
+    color: #333333;
+    background-color: #EEEEEE;
+    border-left: 3px groove #AAAAAA;
+    /* margin: 0 0 1.5em 1em; */
+    margin: 1.125em /* 16?1.125=18 */ 0px 1.125em /* 16?1.125=18 */ 0px;
+    padding: .25em /*4px*/ .714em /*10px*/ .25em /*4px*/ 1.428em /*20px*/;
+    line-height:  1.428em; /*20px*/
+    display: block;
+    text-align: left;
+    overflow: auto;
+    overflow-Y: hidden  /*--Hides vertical scroll created by IE--*/
+    font-style: normal
+}
+/* white-space: pre-wrap; */
+/*font-size: 12px;*/
+/*font-family: 'courier new', courier, monospace;*/
+/* background-image: url('images/1-1249480650QT9U.jpg'); */
+/* display: table; */
+/*font-style: italic;*/
+                 
+blockquote ul {
+	list-style: disc url(images/grayball02.gif) outside
+}
+
+/* Eliminate the BLOCKQOUTE that appears above the debug on CF templates */
+                 
+CAPTION BQ BLOCKQUOTE {
+    display: none
+}
+                 
+/* @@@ CLASSES @@@ */
+
+.clear {
+    clear: both;
+}
+
+.header         {
+    text-align: center;
+    font-weight: bold;
+    background-color: #CCCCCC
+}
+
+.datatable {
+    border: 3px groove blue;
+    border-collapse: collapse;
+    margin-top: 1.125em; /* 16?1.125=18 */
+    margin-bottom: 1.125em; /* 16?1.125=18 */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.datatable caption         {
+    background-color: #CFF0FC;
+    color: #0000CC; 
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    /* font-size : 11px; */
+    font-weight: bold;
+    text-align: center;
+    /*text-transform: capitalize;*/
+    border-style: inherit;
+    border-color: inherit;
+    border-width: .1875em; /* 3px */
+    border-bottom-style: none; 
+    padding: .372 /* 6px ? */;
+    margin-left: auto; 
+    margin-right: auto
+}
+
+.datatable td {
+    text-align: left;
+    vertical-align: top;
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    line-height: 1.125em; /* 16?1.125=18 */
+    padding: .372 /* 6px ? */
+}
+
+.datatable th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #CFF0FC;  
+    color: #0000CC; 
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 100%;
+    line-height: 1.125em; 
+    padding: 6px 
+}
+
+table.standard	{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	padding: 4em;
+}
+
+table.standard	TD, 
+table.standard TH {
+	border: solid thin #06F;
+	padding-left: 5px;
+	padding-right: 5px;	
+}
+
+.unavailable {
+	color: silver;
+	font-weight: bold;
+}
+
+.noborder       {
+    border-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+TD.noborder     {
+    padding: 0px
+}
+
+.withborder     {
+    border-style: solid;
+    border-collapse: separate;
+    margin-top: 1.125em; 
+    margin-bottom: 1.125em; 
+}
+
+/* 16?1.125=18 */
+/* 16?1.125=18 */
+
+.smaller {
+    font-family: "Times New Roman", Ariel, Helvetica, Helv, Serif;
+    font-size: .5em /*10pt*/
+}
+
+.stndfonts {
+    font-family: 'times new roman', 'arial narrow',    arial, helvetica, 'courier new', helv
+}
+
+.resumetextarea {
+    /* Whitespace is preserved by the browser. 
+    Text will wrap when necessary, and on line breaks */
+    word-wrap: break-word;
+    font-size: .875em; /* 14px */
+    font-family: 'courier new', courier, monospace;
+    text-align: left;
+    overflow: auto;
+    border-color: #0000ff;
+    border-style: solid;
+    border-width: thin;
+    padding: 3px;
+    width: 47em; /* cols="80" */
+    overflow: auto;
+    height: auto
+    /* height: 120px; */
+    /* outline [color] [style] [width] */ 
+}
+         
+.posabso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0
+}
+         
+/* Special Navigation Links */
+                 
+A.nav:link      {
+    text-decoration: none
+}
+
+A.nav:visited   {
+    text-decoration: none
+}
+
+A.nav:hover     {
+    text-decoration: none
+}
+
+A.nav:active    {
+    text-decoration: none
+}
+ 
+/* More Special Links */ 
+ 
+A.red:link      {
+    color: red; background: white; text-decoration: underline
+}
+
+A.red:visted    {
+    color: red; background: white; text-decoration: underline
+}
+
+A.red:active    {
+    color: red; background: white; text-decoration: underline
+}
+
+A.blue:link     {
+    color: blue; background: white; text-decoration: underline
+}
+
+A.blue:visted   {
+    color: blue; background: white; text-decoration: underline
+}
+
+A.blue:active   {
+    color: blue; background: white; text-decoration: underline
+}
+
+A.green:link    {
+    color: green; background: white; text-decoration: underline
+}
+
+A.green:visted  {
+    color: green; background: white; text-decoration: underline
+}
+
+A.green:active  {
+    color: green; background: white; text-decoration: underline
+}
+
+A.crazy:hover   {
+    FONT-SIZE: 200pt;
+    TEXT-DECORATION: underline overline line-through;
+    COLOR: #00CC00;
+    FONT-FAMILY: impact
+}
+
+.coolblue       {
+    background-color: rgb(207,240,252)
+}
+
+.highlight      {
+    background: yellow; color: black;
+}
+
+.fancy_div      {
+    border-style: groove; 
+    border-width: 3px; 
+    padding: 1.428em; /*20px*/
+    margin:  1.428em; /*20px*/ 
+    text-align: left
+}
+                 
+.indent         {
+    margin-left: 2.856em; /*40px;*/
+    margin-right: 10px;
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif
+}
+
+.bigindent      {
+    margin-left: 80px;
+    margin-right: 10px;
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif
+}
+
+/* @@@ Table of Contents Box @@@ */
+
+.boxtoc {
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 50px; 
+    width: 30em; 
+    text-align: left; 
+    border: #0000FF 3px inset;
+}
+
+/* @@@ Table of Contents Box (with 2 Columns) @@@ */
+
+.boxtoc02 {
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 50px; 
+    width: 40em; 
+    text-align: left; 
+    border: #0000FF 1px solid
+}
+
+/* Inset box */
+
+.inset          {
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-top: 1.5pt solid gray;
+    border-right: 1.5pt solid white;
+    border-bottom: 1.5pt solid white;
+    border-left: 1.5pt solid gray;
+    background: silver;
+    mso-pattern: #9999FF none;
+    text-decoration: none;
+    width: 200px
+}
+                 
+/* Buttons and Links that appear as buttons */    
+
+input.btn       {
+    color:#050;   
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif;   
+    background-color:#fed;   
+    border: 1px solid;   
+    border-color: #696 #363 #363 #696;   
+    filter:progid:DXImageTransform.Microsoft.Gradient   
+    (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa')
+} 
+
+/* <input type="button" value="Submit" class="btn"> */
+/* http://www.webreference.com/programming/css_stylish/ */    
+
+.button         {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: URL('../images/bg28.gif');
+    font-weight: bold;
+    color: #000000
+}
+
+.error	{
+   text-align: center; 
+   color: #FF0000;
+}
+
+.successmsg {
+   text-align: center;
+   color: #0000FF;
+   font-weight: bold;
+}
+
+/* W3Schools.com CSS */
+
+table.example   {
+    color: #000000;
+    background-color: #e5eecc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #d4d4d4;
+    background-image: url('images/bgfadegreen.gif');
+    background-repeat: repeat-x
+}
+
+table.example_code {
+	background-color: #ffffff;
+	padding: 4px;
+	border: 1px solid #d4d4d4
+}
+
+table.example_code td {
+    font-size: 100%;
+    font-family: 'courier new'
+}
+
+/*
+table.code      {
+    outline: 1px solid #d4d4d4;
+    border: 5px solid #e5eecc
+}
+table.code td   {
+    font-size: 100%;
+    font-family:courier new;
+    background-color:#FFFFFF;
+    border:1px solid #d4d4d4;
+    padding:4px
+}
+table.example_code p,table.code p 
+                {
+    font-family: courier new;
+}
+*/
+
+table.lamp {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #d4d4d4;
+    border-collapse: collapse
+}
+
+table.lamp th   {
+    color:#000000;
+    background-color:white;
+    padding:0px;
+    border-right:1px solid #d4d4d4
+}
+
+table.lamp td   {
+    color:#000000;
+    background-color:#e5eecc;
+    padding:4px;
+    padding-left:10px;
+    background-image:url('images/bgfadegreen.gif');
+    background-repeat:repeat-x
+}
+
+table.reference {
+    border: 1px solid #c3c3c3;
+    border-collapse:collapse
+}
+
+table.reference th {
+    background-color: #e5eecc;
+    border: 1px solid #c3c3c3;
+    padding: 3px;
+    vertical-align: top
+}
+
+table.reference td  {
+    border: 1px solid #c3c3c3;
+    padding: 3px;
+    vertical-align: top
+}
+
+table.intro     {
+    padding: 5px;
+    padding-left:0px;
+    font-size: 100%;
+    color: #555555;
+    background-color:transparent
+}
+
+table.summary   {
+    border: 1px solid #d4d4d4;
+    padding: 5px;
+    font-size: 100%;
+    color: #555555;
+    background-color: #fafad2
+}
+
+p.tutintro      {
+    margin-top: 0px;
+    font-size: 100%
+}
+
+p.intro, p.color_h1 {
+    font-size: 100%;
+    background-color: transparent;
+    text-decoration: none
+}
+
+.GoToTopIntLink {
+    text-align: center;
+    font-size: small;
+    color: #000000;
+    font-family: arial, 'times new roman', verdana, geneva, helvetica;
+    font-weight: bold;
+    margin: 30px 0px
+}
+
+.bluscrn        {
+    font-size: .875em; /* 14px */ 
+    font-family: courier new; 
+    white-space: pre;
+    margin: 0px 1.428em /*20px*/ 0px 1.428em /*20px*/;
+    color: #0000ff
+}
+
+/* Alternating Row Colors */
+
+.OddRow         {
+    background-color: #FFFFFF;
+}
+
+.EvenRow        {
+	background-color: #EEEEEE;
+}
+
+.taichi {
+	font-size: 14.0pt; 
+	font-family: 'Comic Sans MS';
+	color: #2A2A2A;
+}
+
+.taichi11 {
+	font-size: 11.0pt; 
+	font-family: 'Comic Sans MS';
+	color: #2A2A2A;
+}
+
+.taichi10 {
+	font-size: 10.0pt; 
+	font-family: 'Comic Sans MS';
+	color: #2A2A2A;
+}
+
+.foxnews {
+	text-align: right;
+}
+
+.clinton {
+	text-align: center;
+}
+
+.california {
+	text-align: left;
+}
+
+.alicewalker {
+    color: purple;
+}
+
+/* Don't display */
+
+.hide           {
+    display: none;
+}
+
+/* Don't print.  Compare with print.css */ 
+
+.noprint {
+    display: inline;
+}
+
+/* don't change */
+
+.nothing {;
+    font: inherit
+}
+
+*.no_spacing {
+	margin-bottom: 0.000000pt;
+}
+
+/* @@@ Navigation Tabs @@@ */
+
+#rowOfTabs {
+    width: 700px; 
+	margin-left: auto; 
+	margin-right: auto;
+	text-align: left;
+}
+.tablist {
+    list-style:none; 
+    height:2em;
+    padding:0; 
+    margin:0; 
+    border: none;        
+}
+.tablist li {
+    float:left; 
+    margin-right:0.13em; 
+}
+.tablist li a {
+    display:block;
+    padding:0 1em;
+    text-decoration:none;
+    border:0.06em solid #000;
+    border-bottom:0;
+    font:bold 0.88em/2em arial,geneva,helvetica,sans-serif;
+    color:#000;
+    background-color: #39F;
+    /* CSS 3 elements */
+    webkit-border-top-right-radius:0.50em;
+    -webkit-border-top-left-radius:0.50em;
+    -moz-border-radius-topright:0.50em;
+    -moz-border-radius-topleft:0.50em;
+    border-top-right-radius:0.50em;
+    border-top-left-radius:0.50em;
+}
+.tablist li a:hover {
+    background:#3cf; 
+    color:#fff;
+    text-decoration:none;
+}
+.tablist li#current a {
+    background-color: #00F;
+    color: #fff;
+}
+.tablist li#current a:hover {
+    background: #39C;
+}    
+.tablist li#sitelogo a {
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: 130%;
+    font-weight: bold;
+    color: #0000FF;
+    font-style: italic;
+    line-height: 1.125em; /* 16?1.125=18 */
+    margin-top: .34em /* approx. 5 px */;
+    vertical-align: middle;
+    margin-right: 0.26em;
+    border: none;
+    background-color: transparent;
+}
+
+/* @@@ Plone COA @@@ */
+
+table.listing {
+    color: #000;
+	font-family: Arial,sans-serif;
+    border-collapse: collapse;
+    border-left: 1px solid #8CACBB;
+    border-bottom: 1px solid #8CACBB;
+    font-size: 90%;
+    margin: 1em 0em;
+	border-spacing: 0px;
+}
+img.image-inline {
+	float: none;
+	border: medium none;
+	font-family: Arial,sans-serif;
+}
+a.external-link {
+	font-family: Arial,sans-serif;
+	color: #01475D;
+    text-decoration: none;
+}
+
+/* @@@ Mysterious MS Office tags @@@ */
+
+.MsoNormal {
+    font-size:12.0pt;
+    font-family:"Times New Roman","serif"
+}
+.Section1 {
+        page: Section1
+} 
+p.MsoHeader, li.MsoHeader, div.MsoHeader {
+    font-size:12.0pt;
+    font-family:"Times New Roman", "serif";
+}
+p.MsoFooter, li.MsoFooter, div.MsoFooter {
+    font-size:12.0pt;
+    font-family:"Times New Roman", "serif";
+}
+span.MsoHyperlink {
+    color:blue;
+    text-decoration:underline;
+}
+span.MsoHyperlinkFollowed {
+    color:purple;
+    text-decoration:underline;
+}
+div.WordSection1 {
+    page:WordSection1;
+}
+.space8 {
+    text-align:justify;
+    line-height:8.0pt;
+    punctuation-wrap:simple;
+    text-autospace:none;
+    font-size:9.0pt;
+    font-family:Arial;
+}
+.subcap {
+    line-height:10.0pt;
+    punctuation-wrap:simple;
+    text-autospace:none;
+    font-size:9.0pt;
+    font-family:Arial;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.subcap2 {
+    line-height:10.0pt;
+    punctuation-wrap:simple;
+    text-autospace:none;
+    font-size:9.0pt;
+    font-family:Arial;
+    font-weight:bold;
+}
+.tabletext11 {
+    line-height:9.5pt;
+    punctuation-wrap:simple;
+    text-autospace:none;
+    font-size:9.0pt;
+    font-family:Arial;
+}
+.spotlinktarget {
+    font-weight:bold;
+}
+.applabelsmall1 {
+    font-family:Arial;
+    color:black;
+    font-weight:bold;
+    text-decoration:none none;
+}
+.xl24 {
+    
+    font-weight:700;
+    font-family:Arial, sans-serif;
+}
+.xl25 {
+    
+    font-weight:700;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+.xl26 {
+    
+    color:red;
+    font-size:16.0pt;
+    font-family:Arial, sans-serif;
+}
+.xl27 {
+    
+    
+}
+.xl28 {
+    background:yellow;
+}
+.xl29 {
+    
+    
+}
+.xl30 {
+    font-weight:700;
+    font-family:Arial, sans-serif;
+}
+.xl31 {
+    background:black;
+}
+.xl32 {
+    font-size:20.0pt;
+    font-weight:700;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    border-top:1.0pt solid windowtext;
+    border-right:none;
+    border-bottom:1.0pt solid windowtext;
+    border-left:1.0pt solid windowtext;
+}
+
+ /*
+ p.MsoNormal, li.MsoNormal, div.MsoNormal {
+    
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate {
+    
+    mso-style-link:"Balloon Text Char";
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:8.0pt;
+    font-family:"Tahoma","sans-serif";
+}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+    
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:.5in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:0in;
+    margin-left:.5in;
+    margin-bottom:.0001pt;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:0in;
+    margin-left:.5in;
+    margin-bottom:.0001pt;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:.5in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+}
+span.BalloonTextChar {
+    mso-style-name:"Balloon Text Char";
+    mso-style-link:"Balloon Text";
+    font-family:"Tahoma","sans-serif";
+}
+.MsoChpDefault {
+    font-family:"Calibri","sans-serif";
+}
+.MsoPapDefault {
+    margin-bottom:10.0pt;
+    line-height:115%;
+}
+@page WordSection1 {
+    size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;
+}
+div.WordSection1 {
+    page:WordSection1;
+}
+*/
+        
+         
+/* @@@ IDs @@@ */
+
+/* @@@ IDs for Page Layout @@@ */
+
+#wrapper {
+    position: relative; 
+    text-align: left; 
+    width: 1200px; 
+	/* height: 100%; */
+    margin-left: auto; 
+    margin-right: auto;
+    /* background-image: url('images/wrapper_bj01.jpg');
+	background-size: 1200 100%;
+    background-repeat: repeat-y;
+    background-position: center; */
+}
+
+/* @@@ Left Hand Side Navigation Bar @@@ */
+
+#navbarleft {
+    position: absolute; 
+    margin-left: 30px; 
+    text-align: left; 
+    width: 160px;
+	background-color: #CCEEFF;
+}
+
+#nav_bar        {
+    position: fixed;
+	margin-top: 0px;
+}
+
+#nav_bar A      {
+    display: block;
+    outline: 1px solid #d4d4d4;
+    border: 1px solid #0000FF;
+    width: 130px;
+    background-color: #CFF0FC;  /*#e5eecc #EEFFFF */
+    padding-top: -2px;
+    padding-right: 0px;
+    padding-left: .372em /* 6px ? */;
+    padding-bottom: -2px;
+    margin: -8px -8px -8px -8px;
+    font-family: "Times New Roman", Ariel, Helvetica, Serif;
+    font-size: .875em; /* 14px */
+    font-weight: bold
+}
+
+#nav_bar A:link {
+    color: #0000CC;
+    text-decoration: none
+}
+
+#nav_bar A:visited  {
+    color: #0000CC;
+    text-decoration: none
+}
+
+#nav_bar A:hover     {
+    color: #FF0000;
+    background-color: #00FF00;
+    text-decoration: none
+}
+#nav_bar A:active   {
+    color: #009900;
+    text-decoration: none
+}
+
+/* @@@ Right Hand "Content" Space @@@ */
+
+#contentright {
+    text-align: left; 
+    margin-left: 190px;
+    margin-right: 20px;
+    /* border: #0000FF 1 solid; */
+}
+
+#menu0          {
+    padding: 0;   
+    margin: 0
+}
+ 
+#menu0 li       {
+    list-style-type: none
+}
+
+#menu0 a, #menu0 a:visited {
+    display: block;
+    width: 9em;
+    border:1 px solid #808;
+    font-family :arial, verdana, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none
+}  
+
+/* @@@ END IDs for Page Layout @@@ */
+
+#basrelief a    {
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-top: 1.5pt solid gray;
+    border-right: 1.5pt solid white;
+    border-bottom: 1.5pt solid white;
+    border-left: 1.5pt solid gray;
+    background: silver;
+    mso-pattern: #9999FF none;
+    text-decoration: none;
+    width: 200px
+}
+
+#basrelief a: hover {
+    border-top: 1.5pt solid white;
+    border-right: 1.5pt solid gray;
+    border-bottom: 1.5pt solid gray;
+    border-left: 1.5pt solid white;
+    background-color: #FF6
+} 
+
+/* Make certain links appear as buttons */
+
+#buttonlinks a  {
+    margin-right: 0px;
+    border-style: outset;
+    border-width: 2px;
+    padding: 2px 10px 2px 10px;
+    background-color: #bbbbbb;
+    color: #000000;
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal
+}
+#buttonlinks a:hover {
+    background-color: #33CCFF;
+    border-color: #000066 #0000CC #0000CC #000066
+}
+
+/* 
+ol {
+    margin-bottom:0in
+}
+ul {
+    margin-bottom:0in
+}
+h1 {
+    margin-top:24.0pt;
+    margin-right:0in;
+    margin-bottom:6.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:18.0pt;
+    font-family:"Arial","sans-serif";
+
+} 
+h2 {
+margin-top:.25in;
+    margin-right:0in;
+    margin-bottom:4.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:14.0pt;
+    font-family:"Arial","sans-serif";
+
+}
+h3 {
+    margin-top:14.0pt;
+    margin-right:0in;
+    margin-bottom:4.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:12.0pt;
+    font-family:"Arial","sans-serif";
+}
+h4 {
+    margin-top:12.0pt;
+    margin-right:0in;
+    margin-bottom:2.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Arial","sans-serif";
+    font-weight:normal;
+    font-style:italic;
+}
+h5 {
+    margin-top:11.0pt;
+    margin-right:0in;
+    margin-bottom:2.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:10.0pt;
+    font-family:"Arial","sans-serif";
+}
+h6 {
+    margin-top:10.0pt;
+    margin-right:0in;
+    margin-bottom:2.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:10.0pt;
+    font-family:"Arial","sans-serif";
+    font-weight:normal;
+    font-style:italic;
+}
+@page WordSection1 {
+    size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;        
+}
+div.WordSection1 {
+    page:WordSection1;
+}
+*/
+
+/*
+<div align="center">
+
+    <table border="1" cellpadding="6" cellspacing="0" class="RowBG">
+        <caption>Recently Uploaded Files</caption>
+        <tr><th>Date</th><th>File Name</th><th>User</th></tr>
+        <cfoutput query="qrySelLastUploadedFiles" maxrows="15">
+            <cfif #CurrentRow# MOD 2 IS 1><!--- Alternate background colors (White first)  --->
+                    <cfset RowClass="OddRow">
+                <cfelse>
+                    <cfset RowClass="EvenRow">
+            </cfif>
+            <tr class="RowBG">
+                <td>#Uploaddate_dt#</td>
+                <td>#Filename_txt#</td>
+                <td>#Uploader_txt#</td>
+            </tr>
+        </cfoutput>
+    </table>
+
+</div>
+*/
+

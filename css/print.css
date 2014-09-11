@@ -1,0 +1,46 @@
+body              {font-family: font-family: Arial, Helvetica, sans-serif;
+                   font-size: 10pt;
+                   background-color: #FFFFFF;
+                   margin: 0; padding: 0;
+                   text-align: center}
+
+tr, td            {font-family: font-family: Arial, Helvetica, sans-serif;
+                   font-size: 10pt}
+
+pre               {overflow-x: auto; 
+                   /* Use horizontal scroller if needed; for Firefox 2, 
+                        not needed in Firefox 3 */
+                   white-space: pre-wrap; /* css-3 */
+                   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+                   white-space: -pre-wrap; /* Opera 4-6 */
+                   white-space: -o-pre-wrap; /* Opera 7 */ /*
+                   width: 99%; */
+                   word-wrap: break-word; /* Internet Explorer 5.5+ */}
+
+.bjlogo           {width: 100%;
+                   background-color: #DDDDFF}
+
+/*.content          {position: absolute; 
+                   top: 0; 
+                   left: 0;
+                   background-image: none
+                   text-align: left} */
+				   
+.content    {margin-left: 0px} 
+				   
+#printme    {WIDTH: 100%}
+
+#dontprint  {width: 0%}
+
+#navbar     {display: none}
+
+.banner     {display: none}
+
+.logo       {display: none}
+ 
+.nav-button {display: none}
+
+UL.checklist     {list-style-image: url(images/empty_checkbox.png)}
+
+.checked_box   {list-style-image: url(images/checked_box.png)}
+
